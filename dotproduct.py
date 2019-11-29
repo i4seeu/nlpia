@@ -8,3 +8,4 @@ v2 = pd.np.array([2,3,4])
 result = sum([x1 * x2 for x1, x2 in zip(v1, v2)])
 print(v1.dot(v2))
 print(result)
+

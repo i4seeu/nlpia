@@ -44,4 +44,11 @@ print(df.sent0.dot(df.sent3))
 print([(k, v) for (k, v) in (df.sent0 & df.sent3).items() if v])
 
 
-#token improvement
+#token improvement using nltk tokenizer
+
+from nltk.tokenize import TreebankWordTokenizer
+sentence = "Monticello wasn't designated as UNESCO World Heritage Site until 1987."
+tokenizer = TreebankWordTokenizer()
+
+token_words = tokenizer.tokenize(sentence)
+print(token_words)
